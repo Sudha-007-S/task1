@@ -9,9 +9,12 @@
                 <img src="https://ik.imagekit.io/obichks3l/intern/img1.png?updatedAt=1716449919396" alt="logo" height="40" width="40" align="left" />
                 <span style="padding-top: 11px; padding-left: 0px;">𝓝𝓪𝓽𝓾𝓻𝓮</span></div>
                     <div style="width: 100%; float: left;  padding-left:33px">
+            <form id="form">
                     <h1>Login</h1>
                     <p>Nature is the source of all true knowledge.</p><br>
-                    <button type="button" style="width: 450px; border-color:gray; height: 30; border-radius:5px; background-color:rgb(230, 207, 224) ;">
+
+                
+                    <button style="width: 450px; border-color:gray; height: 30; border-radius:5px; background-color:rgb(230, 207, 224) ;">
                     <img src="https://ik.imagekit.io/obichks3l/intern/img2.png?updatedAt=1716459564858" height="20" width="20" align="center"/>
                     <span style="padding-bottom: 2px;"> 
                     Sign in with Google</span></button>
@@ -22,12 +25,29 @@
                         <span style="font-size: small;">Or sign in with Email</span>
                         <hr width="150px"  color="black">
                     </div></center>
-                    <left><label>Email</label><br></left>
-                    <input type="textfield" value="mail@website.com"  style="width: 450px; height: 30; border-color:gray; border-radius:5px;"/><br><br>
-                    <left><label>Password</label></left><br>
-                    <input type="textfield" value="min 8 characters"  style="width: 450px; height: 30; border-color:gray; border-radius: 5px;"/><br><br>
+
+
+        
+                    <left><label for="email">Email</label><br></left>
+                    <input type="text" id="email" placeholder="Enter your email"  style="width: 450px; height: 30; border-color:gray; border-radius:5px;"/>
+                    <br>
+                    <span style="color: red;" id="email_error"></span>
+                    <br><br>
+                
+                
+                    <left><label for="password">Password</label></left><br>
+                    <input type="text" id="password" placeholder="min 8 characters"  style="width: 450px; height: 30; border-color:gray; border-radius: 5px;"/>
+                    <br>
+                    <span style="color: red;" id="pass_error"></span>
+                    <br><br>
+
                     <div style="display: flex;">Remember me<span style="padding-left: 240px; border-radius: 5px;">Forgot Password?</span></div><br>
-                    <input type="submit" value="Login"  style="width: 450px; height: 30; border-radius: 5px; border-color:gray; background-color:rgb(222, 99, 191);"/>
+                
+                
+                    <button type="submit" style="width: 450px; height: 30; border-radius: 5px; border-color:gray; background-color:rgb(222, 99, 191);">Login</button>
+    
+                </form>
+                    <br>
                     <pre>Not registered yet? <font color="blue">Create an account</font></pre><br><br>
                     <font size="2px" align="left">@2024Nature all rights reserved.</font>
                     <br>
@@ -54,5 +74,6 @@
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
     </body>
 </html>
